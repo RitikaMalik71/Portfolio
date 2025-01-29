@@ -707,3 +707,57 @@ body.dark-mode .navbar-collapse a {
   75% { transform: rotate(15deg); }  /* Rotate to the other side */
   100% { transform: rotate(0deg); }   /* Back to neutral */
 }
+/* For mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between; /* Space between logo and other items on smaller screens */
+  }
+  
+  .navbar .ritika-logo {
+    width: 50px; /* Adjust size for smaller screens */
+  }
+}
+
+/* Further fine-tuning for very small screens */
+@media (max-width: 576px) {
+  .navbar .ritika-logo {
+    width: 40px; /* Reduce logo size for very small screens */
+  }
+}
+@media (max-width: 767px) {
+  #formalphoto {
+    margin-left: 25%;  /* Adjust this value to fine-tune the position */
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  /* Center align the paragraph with proper margins */
+  .scroll-target .row:nth-child(1) .col-12 {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  /* Center the entire card container */
+  .row.justify-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ensure all cards have equal width and are centered */
+  .col-12.col-md-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+    margin: auto;
+  }
+  .col-12.col-md-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
