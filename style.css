@@ -1,0 +1,687 @@
+*{
+    margin :0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    margin: 0;
+    height: 100%; /* Allow body to be fully scrollable */
+    overflow: auto; /* Ensure scrolling is enabled */
+    position: relative; /* Ensure that pseudo-elements are positioned relative to body */
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+  }
+  
+  
+  
+nav  {
+position: fixed !important;
+
+top: 0 !important; /* Align it at the top of the viewport */
+width: 100% !important; /* Ensure it spans the full width */
+z-index: 1000 !important;  
+height: 85px;
+flex:1 !important;
+
+}
+nav ul {
+    position: relative;
+    margin-left: 400px;
+    margin-bottom: 12px !important;
+}
+#navli{
+
+ 
+    margin-left: 200px;
+    padding: 15px;
+    color :rgb(77, 40, 117);
+    font-weight:600;
+ 
+    
+}
+.left{
+    font-size: 1.5rem;
+}
+
+.leftSection{
+font-size: 2.5rem;
+margin-top: 70px;
+
+   
+}
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+ 
+.grey{
+    display: flex;
+    justify-content: center;
+    color :grey;
+    font-size: 20px;
+}
+.box{
+    margin :auto ;
+    margin-top: 12rem;
+    width :145vh;
+   height :4px;
+    background-color:black;
+    display :flex;
+}
+
+
+
+.aboutme{
+ display: flex;
+ justify-content: center;
+ margin : 0px 250px;
+}
+
+.footer-first{
+  margin-top: 30px;
+}
+
+.footer-second  a img{
+  position: relative !important;
+  margin-top: -78px !important;
+  justify-content: flex-end !important;
+  
+    
+    height :50px !important;
+    width :50px !important;
+    margin-left: 30px !important;
+}
+
+#logo{
+    height: 75px;
+    width :250px;
+    margin-left :150px;
+}
+#logofooter{
+    height :100px;
+    width :250px;
+    margin-left :10px;
+}
+.mail{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#mailbox{
+    position: relative;
+    height :50px;
+    width :50px;
+    margin-top:150px ;
+    margin-left: -270px;
+    margin-right: -25px;
+}
+.mailid{
+    position: relative;
+    font-weight: 600;
+    margin-top:150px ;
+    margin-left: 30px;
+}
+
+
+.card{
+    margin-right: 20px;
+  
+}
+
+.headingtool {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .toollogo img {
+    object-fit: contain; /* Ensures images scale without distortion */
+    max-height: 80px;    /* Keeps all tool icons uniform in size */
+    margin: 0 auto;      /* Centers the images within their columns */
+  }
+  
+
+
+
+.toollogo img:hover
+{
+    box-shadow: 0px 2px 8px rgb(164, 115, 173);
+    cursor: pointer;
+    font-size: calc(100% + 2px);
+}
+.card img{
+  height :100px;
+  width :100px;
+
+ margin :20px 13px;
+  border-radius: 1rem !important;
+  width:40% !important;
+  
+}
+
+
+  .card-hover {
+    position: relative; /* Set the card as a relative container */
+    overflow: hidden;   /* Ensure content doesn't spill out */
+  }
+  
+  .card-hover .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-hover .card-body {
+    padding: 20px; /* Adjust the padding if needed */
+  }
+  
+  .card-hover:hover {
+    box-shadow: 8px 8px 8px rgb(164, 115, 173); /* Box shadow around the card */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+  }
+  
+
+.buttons{
+    display :flex;
+    justify-content: center;
+    text-align: center;
+    margin-left :100px !important;
+    margin-right: 550px !important;
+  
+}
+.myresume{
+    border :1px solid rgb(181, 131, 228) !important;
+}
+.bt{
+  
+    
+    
+    display: flex !important;
+    align-items: center !important; 
+    justify-content: center !important;
+    text-align: center !important;
+    border-radius: 50px !important;
+   border :#1b0f36;
+    padding-left :60px !important;
+    padding-right :60px !important;
+   
+    margin-right: 30px !important;
+      width :150px !important;
+      height : 50px !important;
+        font-size: 15px !important;
+        font-weight: bold;
+       
+    cursor: pointer;
+    
+    transition: transform 0.3s ease;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+.contact {
+    display: inline-flex !important;
+    align-items: center !important; 
+    justify-content: center !important;
+    text-align: center !important;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fbc2eb);
+    background-size: 400% 400% !important;
+    color: white !important;
+    border: none;
+    border-radius: 50px !important;
+   
+padding-left :60px !important;
+padding-right :-30px !important;
+
+  width :150px !important;
+  height : 50px !important;
+    font-size: 15px !important;
+    font-weight: bold;
+   
+    cursor: pointer;
+    
+  
+    transition: transform 0.3s ease;
+    animation: gradientAnimation 5s ease infinite;
+  }
+  
+  .bt:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .alignicons{
+    width :15px;
+    margin-right :-12px !important;
+  }
+ /* Change the focus shadow color for form controls */
+.form-control:focus {
+   
+    box-shadow: 0 0 0 0.1rem rgb(164, 115, 173) !important;   /* Custom red shadow */
+  }
+  
+  /* Change the focus shadow color for buttons */
+  .btn:focus {
+    box-shadow: 0 0 0 0.1rem rgb(164, 115, 173) !important; /* Custom green shadow */
+   
+  }
+
+ 
+ 
+  
+  .row.text-center > .col-md-2 {
+    margin-right: 10px; /* Horizontal spacing */
+  }
+  #formalphoto {
+    flex-shrink: 0;
+    min-width: 250px;
+    min-height: 310px;
+    width: 280px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 100px !important;
+    border-radius: 2rem;
+  }
+  .bt {
+    display: flex !important;
+    align-items: center !important; /* Aligns items (text and icons) in the center vertically */
+    justify-content: center !important; /* Centers the content horizontally */
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+  
+   
+    border-radius: 45px !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s !important;
+  }
+  
+ 
+  
+  .bt img {
+    margin-left: 10px; /* Adds space between the text and the icon */
+    height: 15px; /* Adjust icon size */
+  }
+  
+  .bt a {
+    color:black; /* Ensure text color is white */
+    text-decoration: none;
+  }
+  .contact {
+    display: flex !important;
+    align-items: center !important; /* Aligns items (text and icons) in the center vertically */
+    justify-content: center !important; /* Centers the content horizontally */
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+  
+   
+    border-radius: 45px !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s !important;
+  }
+  .contact img{
+    margin-left: 10px; /* Adds space between the text and the icon */
+    height: 15px; /* Adjust icon size */
+  }
+  
+  .contact a {
+    color:white; /* Ensure text color is white */
+    text-decoration: none;
+  
+  }
+ 
+   
+ 
+  html {
+    scroll-behavior: smooth;
+  }
+  .scroll-target {
+    scroll-margin-top: 80px; /* Adjust this to match your navbar height */
+    padding-top: 20px;
+}
+/* Base Navbar Styling */
+.navbar {
+  background-color: white; /* Base white background */
+  position: relative;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Minimal shadow */
+  z-index: 10;
+ 
+}
+
+
+/* Subtle Sparkle Effect */
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle,
+      rgba(255, 182, 193, 0.15) 5%,
+      transparent 80%
+    ),
+    radial-gradient(
+      circle,
+      rgba(255, 253, 150, 0.15) 5%,
+      transparent 80%
+    ),
+    radial-gradient(
+      circle,
+      rgba(230, 230, 250, 0.15) 5%,
+      transparent 80%
+    ),
+    radial-gradient(
+      circle,
+      rgba(173, 216, 230, 0.15) 5%,
+      transparent 80%
+    ),
+    radial-gradient(
+      circle,
+      rgba(221, 160, 221, 0.15) 5%,
+      transparent 80%
+    );
+  background-size: 300px 300px; /* Larger and more spaced-out sparkles */
+  background-position: random;
+  opacity: 0.2; /* Extremely subtle */
+  animation: sparkle 7s infinite;
+  z-index: -1; /* Behind the navbar content */
+}
+
+/* Gentle Sparkle Animation */
+@keyframes sparkle {
+  0% {
+    background-position: 0% 0%, 30% 40%, 70% 80%, 90% 20%, 50% 100%;
+  }
+  50% {
+    background-position: 20% 60%, 60% 20%, 80% 50%, 30% 90%, 100% 40%;
+  }
+  100% {
+    background-position: 0% 100%, 50% 70%, 90% 30%, 40% 20%, 80% 80%;
+  }
+}
+
+/* Navbar Links Styling */
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  margin-right: 15px;
+
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+.fms{
+  background-color: #a18cd1 !important;
+  color :white !important;
+  border:none !important;
+}
+/* Adjusting card styles */
+.Card {
+  width: 100%; /* Make the card take the full width of the column */
+  aspect-ratio: 3 / 2; /* Increase the aspect ratio to increase the card size */
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure images cover the card fully */
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay adjustments */
+.overlay {
+  position: absolute;
+  bottom: 20%; /* 60% of card height */
+  left: 10%; /* 18% reduced width */
+  right: 10%;
+  height: 40%; /* 60% height remains same */
+  background-color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  color:rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+}
+
+.overlay a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+ 
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+
+.overlay a img{
+  width :2rem !important;
+  height :2rem !important;
+}
+/* Additional responsive adjustments */
+@media (max-width: 767px) {
+  .Card {
+    width: 100%;
+  }
+
+  .overlay {
+    font-size: 0.8rem;
+  }
+}
+
+.alignicons {
+  vertical-align: middle;
+}
+/* Light theme */
+body {
+  background-color: white;
+  color: black;
+}
+html, body {
+  height: 100% !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Content area should take up the remaining space */
+.content-wrapper {
+  flex: 1 !important;
+}
+.navbar {
+  background-color: #f8f9fa;
+}
+.navbar a:hover{
+  font-size: 1.2rem;
+}
+/* Dark Mode Navbar */
+body.dark-mode .navbar {
+  background-color: #333 !important;
+}
+
+/* Dark Mode Navbar Collapse */
+body.dark-mode .navbar-collapse {
+  background-color: #333 !important;
+  color: white !important;
+}
+body.dark-mode{
+  background-color: black !important;
+  color:white;
+}
+/* Dark Mode Navbar Links */
+body.dark-mode .navbar-collapse a {
+  color: white !important;
+}
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background-color: transparent;
+  border: none !important;  /* ✅ Removes border */
+  outline: none !important; /* ✅ Removes focus outline */
+  cursor: pointer;
+  color: inherit;
+  font-size: 18px;
+  padding: 5px;
+}
+
+/* Remove unwanted focus outline on click */
+.dark-mode-toggle:focus {
+  outline: none !important;
+  box-shadow: none !important; /* ✅ Removes any shadow */
+}
+
+@media (max-width: 768px) { /* Apply styles only for small screens */
+  .navbar-collapse {
+    background-color: #f0f0f0 !important; /* Light grey background */
+    position: absolute;
+    top: 100%;
+    right: 0; /* Aligns dropdown to the right */
+    width: 150px; /* Ensures it doesn't extend beyond a reasonable width */
+    z-index: 1000;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* Adds padding for spacing */
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center links horizontally */
+    overflow-y: auto; /* Ensures dropdown content isn't cut off vertically */
+    max-height: 80vh; /* Ensures the dropdown isn't too tall */
+  }
+
+  /* Navbar links styling */
+  .navbar-collapse a {
+    color: black !important;
+    padding: 10px 0; /* Adds spacing between links */
+    width: 100%; /* Ensures full width for better alignment */
+    text-align: center; /* Center text inside each link */
+    display: block;
+  }
+
+  /* Navbar links in dark mode */
+  body.dark-mode .navbar-collapse {
+    background-color: #333 !important; /* Dark grey background in dark mode */
+  }
+  body.dark-mode .navbar-collapse a {
+    color: white !important;
+  }
+
+  /* Ensure no border or gap at the top of the navbar-collapse */
+  .navbar-collapse.show {
+    visibility: visible; /* Makes sure it's not hidden after clicking */
+    max-height: none; /* Remove any height restriction on expanded state */
+  }
+}
+
+.fms:hover{
+  transform: scale(1.1)
+}
+
+.waving-hand-container {
+  position: fixed;
+}
+
+.waving-hand {
+  width: 40px; /* Adjust size as needed */
+  animation: wave 1.5s ease-in-out infinite; /* Smooth waving motion */
+  transform-origin: bottom center; /* The pivot point for the waving effect */
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }    /* Start in the neutral position */
+  25% { transform: rotate(-15deg); } /* Rotate to one side */
+  50% { transform: rotate(0deg); }    /* Return to neutral */
+  75% { transform: rotate(15deg); }  /* Rotate to the other side */
+  100% { transform: rotate(0deg); }   /* Back to neutral */
+}
+/* Footer Icons */
+.footer-icon {
+  width: 30px; /* Adjust icon size */
+  margin: 0 10px; /* Add spacing between icons */
+}
+
+.footer-first h6 {
+  font-size: 14px; /* Adjust text size for responsiveness */
+  margin-bottom: 80px; /* Remove extra margin */
+}
+
+.footer-second {
+  display: flex;
+  justify-content: center; /* Center align icons */
+  gap: 10px; /* Add spacing between icons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .footer-icon {
+    width: 25px; /* Reduce icon size for smaller screens */
+  }
+  .footer-second {
+    gap: 10px; /* Reduce spacing between icons */
+  }
+}
+/* Ensure rounded styling on image and margin-top for alignment */
+
+
+/* Styling for text container */
+#about-me {
+  text-align: center;
+}
+
+.leftSection {
+  margin-top: 20px;
+}
+
+.waving-hand {
+  width: 40px;
+  height: 40px;
+
+}
+
+.waving-hand-container {
+  /*position: relative;
+  top: 50px;
+  margin-left:-450px;*/
+  position: absolute;
+  left: -30px; /* Adjust this value to place the hand correctly */
+  top: 10px; /* Align it properly with the text */
+  width: 40px; /* Adjust size */
+  height: auto;
+}
+.leftSection {
+  position: relative; /* This makes sure the child (image) is positioned relative to this container */
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px !important;
+}
