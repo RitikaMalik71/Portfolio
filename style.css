@@ -608,23 +608,7 @@ body.dark-mode .navbar-collapse a {
   transform: scale(1.1)
 }
 
-.waving-hand-container {
-  position: fixed;
-}
 
-.waving-hand {
-  width: 40px; /* Adjust size as needed */
-  animation: wave 1.5s ease-in-out infinite; /* Smooth waving motion */
-  transform-origin: bottom center; /* The pivot point for the waving effect */
-}
-
-@keyframes wave {
-  0% { transform: rotate(0deg); }    /* Start in the neutral position */
-  25% { transform: rotate(-15deg); } /* Rotate to one side */
-  50% { transform: rotate(0deg); }    /* Return to neutral */
-  75% { transform: rotate(15deg); }  /* Rotate to the other side */
-  100% { transform: rotate(0deg); }   /* Back to neutral */
-}
 /* Footer Icons */
 .footer-icon {
   width: 30px; /* Adjust icon size */
@@ -663,25 +647,63 @@ body.dark-mode .navbar-collapse a {
   margin-top: 20px;
 }
 
-.waving-hand {
-  width: 40px;
-  height: 40px;
 
-}
 
-.waving-hand-container {
-  /*position: relative;
-  top: 50px;
-  margin-left:-450px;*/
-  position: absolute;
-  left: -30px; /* Adjust this value to place the hand correctly */
-  top: 10px; /* Align it properly with the text */
-  width: 40px; /* Adjust size */
-  height: auto;
-}
+
 .leftSection {
   position: relative; /* This makes sure the child (image) is positioned relative to this container */
   display: flex;
   flex-direction: column;
   margin-top: 80px !important;
+  margin-left:5px !important;
+}
+.navbar img {
+  max-width: 150px; /* Limit the image width on larger screens */
+  height: auto; /* Keep the aspect ratio intact */
+  margin-left: auto; /* Push the image to the right */
+  margin-right: 10px; /* Adds some spacing between the image and the navbar links */
+}
+
+@media (max-width: 768px) { /* Adjust image on smaller screens */
+  .navbar img {
+    max-width: 100px; /* Shrink the image size */
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+
+  .navbar .container-fluid {
+    display: flex; /* Ensure navbar content is flexible */
+    justify-content: space-between; /* Space out navbar content */
+    align-items: center; /* Vertically align items */
+  }
+}
+/* Make sure the waving hand image is centered properly */
+.waving-hand-container {
+  width: 50px; /* Adjust the width to your preference */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center horizontally */
+  position: relative; /* Allow for absolute positioning if needed */
+}
+
+/* Adjust the position for smaller screens */
+@media (max-width: 576px) {
+  .waving-hand-container {
+    width: 40px; /* Smaller size for smaller screens */
+  }
+}
+
+
+
+
+.waving-hand {
+  width: 40px; /* Adjust size as needed */
+  animation: wave 1.5s ease-in-out infinite; /* Smooth waving motion */
+  transform-origin: bottom center; /* The pivot point for the waving effect */
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }    /* Start in the neutral position */
+  25% { transform: rotate(-15deg); } /* Rotate to one side */
+  50% { transform: rotate(0deg); }    /* Return to neutral */
+  75% { transform: rotate(15deg); }  /* Rotate to the other side */
+  100% { transform: rotate(0deg); }   /* Back to neutral */
 }
